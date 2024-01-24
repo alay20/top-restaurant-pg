@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('./ZenAntique-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'BodyFont';
+    src:url('./ZenOldMincho-Regular.ttf');
+}
+
+html {
+    font-family: 'BodyFont', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(236, 191, 133);
+    color: rgb(2, 19, 33);
+    min-width: 750px;
+}
+
+#restaurant-name {
+    font-family: 'HeaderFont', sans-serif;
+    font-size: 75px;
+    margin-bottom: 25px;
+}
+
+.nav-list {
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 0px;
+}
+
+#menu {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+#content{
+    margin-top: 50px;
+}
+
+/* Home section*/
+
+.main-img {
+    width: 28%;
+    height: auto;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "description description"
+        "hours location";
+    column-gap: 15px;
+    margin-top: 30px;
+    width: 55%;
+    height: auto;
+}
+
+.description,
+.hours,
+.location {
+    font-size: 20px;
+    color: rgb(2, 19, 33);
+}
+
+.hours,
+.location {
+    margin-top: 10px;
+}
+
+.hours-header,
+.location-header {
+    color: rgb(2, 19, 33);
+    margin-bottom: 0px;
+}
+
+.description {
+    grid-area: description;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.hrs-container {
+    grid-area: hours;
+}
+
+.loca-container {
+    grid-area: location;
+}
+
+.hrs-container,
+.loca-container {
+    white-space: pre-line;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.description,
+.hrs-container,
+.loca-container {
+    background-color: rgb(236, 191, 133);
+    border: 5px solid rgb(139, 98, 100);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Menu Section */
+
+.menu-container {
+    background-color: rgb(236, 191, 133);
+    border: 5px solid rgb(139, 98, 100);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 25px; 
+    width: 60%;
+    height: auto;
+}
+
+.menu-header {
+    text-align: center;
+    border-bottom: 2px solid rgb(2, 19, 33);
+}
+
+.item-container {
+    margin: 0px 0px 20px 0px;
+}
+
+.item-header {
+    margin: 0px;
+}
+
+.item-description {
+    margin: 0px;
+}
+
+.item-price {
+    margin: 0px;
+}
+
+.small-plates {
+    grid-area: smallPlates;
+}
+
+.sushi {
+    grid-area: sushi;
+}
+
+.desserts {
+    grid-area: desserts;
+}
+
+.drinks {
+    grid-area: drinks;
+}
+
+/* Contact Section */
+.form-cont {
+    background-color: rgb(236, 191, 133);
+    border: 5px solid rgb(139, 98, 100);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 25px; 
+}
+
+.form-li {
+    font-size: 17px;
+}
