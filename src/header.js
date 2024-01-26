@@ -17,9 +17,9 @@ const liContact = document.createElement('li');
 restNameContainer.classList.add('rest-name-container');
 restaurantName.setAttribute('id', 'restaurant-name');
 navList.classList.add('nav-list');
-liHome.setAttribute('id', 'home');
-liMenu.setAttribute('id', 'menu');
-liContact.setAttribute('id', 'contact');
+liHome.classList.add('nav-button');
+liMenu.classList.add('nav-button');
+liContact.classList.add('nav-button');
 
 //Append elements
 body.insertBefore(header, content); 

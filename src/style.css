@@ -40,14 +40,11 @@ header {
     margin-top: 0px;
 }
 
-#menu {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-li {
+.nav-button {
     display: inline-block;
     font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #content{
@@ -173,15 +170,13 @@ li {
 }
 
 /* Contact Section */
-.form-cont {
-    background-color: rgb(236, 191, 133);
-    border: 5px solid rgb(139, 98, 100);
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 25px; 
-}
 
 .form-li {
     font-size: 17px;
+}
+
+input,
+select,
+textarea, {
+    
 }
