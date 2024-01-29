@@ -173,10 +173,17 @@ header {
 
 .form-li {
     font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-input,
-select,
-textarea, {
-    
+input {
+    height: 25px;
+}
+
+select {
+    height: 27px;
+    font-family: 'BodyFont', sans-serif;
+    font-size: 17px;
 }

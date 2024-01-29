@@ -77,8 +77,9 @@ export const createContact = () => {
             labelMsg.textContent = 'Your Message*';
             //textarea element
             const txtAreaMsg = document.createElement('textarea');
-            txtAreaMsg.cols = '50'
+            txtAreaMsg.cols = '50';
             txtAreaMsg.rows = '10';
+            txtAreaMsg.id = 'msg';
 
 
     //Add class/id
@@ -111,8 +112,10 @@ export const createContact = () => {
         contactPara.style.margin ='0';
 
         //Contact form
-        contactFormCont.style.marginTop = '30px';
+        contactPara.style.marginTop = '20px';
+        contactFormCont.style.marginTop = '20px';
         formUl.style.listStyleType = 'none';
+        
 
     
     //Append Elements
