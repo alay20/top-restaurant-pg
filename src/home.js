@@ -57,7 +57,7 @@ export const createHome = () => {
     //Add text
     restDescript.textContent = `Welcome to Umami Alley, your haven for authentic Japanese izakaya delights in the heart of Toronto.
     Experience the art of umami with our thoughtfully crafted menu, blending traditional flavors with modern flair.
-    From savory yakitori to soul-soothing ramen, each dish tells a tale of culinary mastery.
+    From savory yakitori to aburi oshi bursting with flavours, each dish tells a tale of culinary mastery.
     Join us for an intimate evening, where lantern-lit tables set the stage for shared moments and exquisite cuisine.
     Elevate your senses at Umami Alley – a celebration of taste, culture, and the spirit of izakaya dining.`;
 

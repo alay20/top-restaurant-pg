@@ -1,3 +1,7 @@
+:root {
+    --button-color: rgb(139, 98, 100);
+}
+
 @font-face {
     font-family: 'HeaderFont';
     src: url('./ZenAntique-Regular.ttf');
@@ -40,11 +44,12 @@ header {
     margin-top: 0px;
 }
 
-.nav-button {
+.nav-link {
     display: inline-block;
     font-size: 25px;
     margin-left: 50px;
     margin-right: 50px;
+    cursor: pointer;
 }
 
 #content{
@@ -180,10 +185,27 @@ header {
 
 input {
     height: 25px;
+    font-family: 'BodyFont', sans-serif;
+    font-size: 17px;
 }
 
 select {
     height: 27px;
     font-family: 'BodyFont', sans-serif;
     font-size: 17px;
+}
+
+.buttons {
+    border: none;
+    box-sizing: border-box;
+    background-color: var(--button-color);
+    font-family: inherit;
+    font-size: 17px;
+    padding:9px;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,8 +1,11 @@
 export const createContact = () => {
     const content = document.querySelector('#content');
+    
 
     //Create elements
         const contactMainCont = document.createElement('div');
+            //access contactMainCont
+               let getContactMainCont = () => contactMainCont;
         const contactHeader = document.createElement('h2');
         const contactPara = document.createElement('p');
         const contactFormCont = document.createElement('div');
@@ -13,8 +16,9 @@ export const createContact = () => {
         const emailLi = document.createElement('li');
         const phoneLi = document.createElement('li');
         const categoryLi = document.createElement('li');
+        const btnLi = document.createElement('li');
         const msgLi = document.createElement('li');
-        const submitBtn = document.createElement('button');
+        
 
 
         
@@ -28,6 +32,8 @@ export const createContact = () => {
             inputName.type = 'text';
             inputName.id = 'name';
             inputName.name = 'user_name';
+            inputName.required = true;
+
         
         //Form - Email elements
             //label element
@@ -39,6 +45,7 @@ export const createContact = () => {
             inputEmail.type = 'email';
             inputEmail.id = 'mail';
             inputEmail.name = 'user_email';
+            inputEmail.required = true;
         
         //Form - Phone number elements
             //label element
@@ -80,6 +87,10 @@ export const createContact = () => {
             txtAreaMsg.cols = '50';
             txtAreaMsg.rows = '10';
             txtAreaMsg.id = 'msg';
+            txtAreaMsg.required = true;
+        
+        //Form - button
+        const submitBtn = document.createElement('button');
 
 
     //Add class/id
@@ -93,9 +104,11 @@ export const createContact = () => {
         phoneLi.classList.add('form-li');
         categoryLi.classList.add('form-li');
         msgLi.classList.add('form-li');
+        btnLi.classList.add('form-li');
+        submitBtn.classList.add('buttons');
 
         
-    //Add styling to elements
+    //Add styling and attributes to elements
         //#content element
         content.style.display = 'flex';
         content.style.flexDirection = 'column';
@@ -108,14 +121,18 @@ export const createContact = () => {
         //Contact header
         contactHeader.style.textAlign = 'center';
         contactHeader.style.margin = '0';
+        
         //Contact p element
-        contactPara.style.margin ='0';
+        contactPara.style.marginTop = '20px';
+        contactPara.style.marginBottom = '0px';
+        contactPara.style.width = '300px';
+        contactPara.style.textAlign = 'center';
 
         //Contact form
-        contactPara.style.marginTop = '20px';
-        contactFormCont.style.marginTop = '20px';
         formUl.style.listStyleType = 'none';
-        
+        formUl.style.padding = '0px';
+        formUl.style.margin = '20px 40px'
+
 
     
     //Append Elements
@@ -157,15 +174,19 @@ export const createContact = () => {
         msgLi.appendChild(txtAreaMsg);
 
         //Form - Button
-        formUl.appendChild(submitBtn);
+        formUl.appendChild(btnLi);
+        btnLi.appendChild(submitBtn);
 
     //Add Text
     contactHeader.textContent = 'Contact Us';
     contactPara.textContent = 'We would love to hear from you. Send us a message and we will get back to you.';
     submitBtn.textContent = 'Submit';
 
+    const submitBtnAction = () => {
+        getContactMainCont().textContent = 'Thank you for reaching out to us! We will get back to you within 2-3 business days.'
+    }
 
-
-
+    //Submit button
+    submitBtn.onclick = submitBtnAction;
 
 }
