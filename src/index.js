@@ -4,16 +4,16 @@ import { createHeader } from './header';
 import { createHome } from './home';
 import { createMenu } from './menu';
 import { createContact } from './contact';
+import { createFooter } from './footer';
 
 const clickNav = (() => {
     createBackground();
     createHome();
-    createBackground();    
+    createFooter();
     const headerElements = createHeader();
 
     const content = document.querySelector('#content');
     
-
     let getContentDiv = () => content;
     
     const clickHome = () => {

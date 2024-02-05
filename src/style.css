@@ -24,6 +24,7 @@ body {
 }
 
 header {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,13 +45,51 @@ header {
     margin-top: 0px;
 }
 
-.nav-link {
+.home-link,
+.menu-link,
+.contact-link {
     display: inline-block;
     font-size: 25px;
     margin-left: 50px;
     margin-right: 50px;
     cursor: pointer;
 }
+
+.home-icon,
+.menu-icon,
+.contact-icon,
+.home-icon-hide,
+.menu-icon-hide,
+.contact-icon-hide {
+    position: absolute;
+    height: 30px;   
+    width: auto;
+    top: 175px;
+}
+
+.home-icon,
+.home-icon-hide {
+    left: 232px;
+}
+
+.menu-icon,
+.menu-icon-hide {
+    left: 392px;
+}
+
+.contact-icon,
+.contact-icon-hide {
+    left: 574px;
+}
+
+.home-icon-hide,
+.menu-icon-hide,
+.contact-icon-hide {
+    visibility: hidden;
+}
+
+
+
 
 #content{
     margin-top: 50px;
