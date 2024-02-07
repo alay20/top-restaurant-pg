@@ -26,7 +26,6 @@ export const createFooter = () => {
     //Styling
     footer.style.color = 'rgb(236, 191, 133)';
     footer.style.marginTop = '30px';
-    footer.style.
     attributeLinks.style.padding = '0px';
     attributeLinks.style.listStyle = 'none';
     liBackground.style.display = 'inline-block';
