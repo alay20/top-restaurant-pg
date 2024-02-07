@@ -3,100 +3,101 @@ export const createContact = () => {
     
 
     //Create elements
-        const contactMainCont = document.createElement('div');
-            //access contactMainCont
-               let getContactMainCont = () => contactMainCont;
-        const contactHeader = document.createElement('h2');
-        const contactPara = document.createElement('p');
-        const contactFormCont = document.createElement('div');
-        const contactForm = document.createElement('form');
-            //access contactForm
-                let getcontactForm = () => contactForm;
-        
-        const formUl = document.createElement('ul');
-        const nameLi = document.createElement('li');
-        const emailLi = document.createElement('li');
-        const phoneLi = document.createElement('li');
-        const categoryLi = document.createElement('li');
-        const btnLi = document.createElement('li');
-        const msgLi = document.createElement('li');
-        
+    const contactMainCont = document.createElement('div');
+        //access contactMainCont
+            let getContactMainCont = () => contactMainCont;
+    const contactHeader = document.createElement('h2');
+    const contactPara = document.createElement('p');
+    const contactFormCont = document.createElement('div');
+    const contactForm = document.createElement('form');
+        //access contactForm
+            let getcontactForm = () => contactForm;
+    
+    const formUl = document.createElement('ul');
+    const nameLi = document.createElement('li');
+    const emailLi = document.createElement('li');
+    const phoneLi = document.createElement('li');
+    const categoryLi = document.createElement('li');
+    const btnLi = document.createElement('li');
+    const msgLi = document.createElement('li');
+    
 
 
         
-        //Form - Name elements
-            //label element
-            const labelName = document.createElement('label');
-            labelName.setAttribute('for', 'name');
-            labelName.textContent = 'Name *';
-            //input element
-            const inputName = document.createElement('input');
-            inputName.type = 'text';
-            inputName.id = 'name';
-            inputName.name = 'user_name';
-            inputName.required = true;
-            inputName.placeholder = 'Required';
+    //Form - Name elements
+        //label element
+        const labelName = document.createElement('label');
+        labelName.setAttribute('for', 'name');
+        labelName.textContent = 'Name *';
+        //input element
+        const inputName = document.createElement('input');
+        inputName.type = 'text';
+        inputName.id = 'name';
+        inputName.name = 'user_name';
+        inputName.required = true;
+        inputName.placeholder = 'Required';
 
-        
-        //Form - Email elements
-            //label element
-            const labelEmail = document.createElement('label');
-            labelEmail.setAttribute('for', 'mail');
-            labelEmail.textContent = 'Email *';
-            //input element
-            const inputEmail = document.createElement('input');
-            inputEmail.type = 'email';
-            inputEmail.id = 'mail';
-            inputEmail.name = 'user_email';
-            inputEmail.required = true;
-            inputEmail.placeholder = 'Required';
-        
-        //Form - Phone number elements
-            //label element
-            const labelPhone = document.createElement('label');
-            labelPhone.setAttribute('for', 'phone');
-            labelPhone.textContent = 'Phone Number';
-            //input element
-            const inputPhone = document.createElement('input');
-            inputPhone.type = 'tel';
-            inputPhone.id = 'phone';
-            inputPhone.name = 'user_phone';
-            inputPhone.placeholder = 'Optional';
+    
+    //Form - Email elements
+        //label element
+        const labelEmail = document.createElement('label');
+        labelEmail.setAttribute('for', 'mail');
+        labelEmail.textContent = 'Email *';
+        //input element
+        const inputEmail = document.createElement('input');
+        inputEmail.type = 'email';
+        inputEmail.id = 'mail';
+        inputEmail.name = 'user_email';
+        inputEmail.required = true;
+        inputEmail.placeholder = 'Required';
+    
+    //Form - Phone number elements
+        //label element
+        const labelPhone = document.createElement('label');
+        labelPhone.setAttribute('for', 'phone');
+        labelPhone.textContent = 'Phone Number';
+        //input element
+        const inputPhone = document.createElement('input');
+        inputPhone.type = 'tel';
+        inputPhone.id = 'phone';
+        inputPhone.name = 'user_phone';
+        inputPhone.placeholder = 'Optional';
 
-        //Form - Category elements
-            //label element
-            const labelCategory = document.createElement('label');
-            labelCategory.setAttribute('for', 'category');
-            labelCategory.textContent = 'What are you getting in touch about? *'
-            //dropbox element
-            const selectCategory = document.createElement('select');
-            selectCategory.id = 'category';
-            selectCategory.name = 'category';
-            const createDropDown = () => {
-                const contactCategory = ['General Inquiry', 'Press Inquiry', 'Suggestions'];    
-                contactCategory.forEach(categoryText => {
-                    const category = document.createElement('option');
-                    category.value = categoryText.toLowerCase().replace(' ', '');
-                    category.textContent = categoryText;
-                    selectCategory.appendChild(category);
-                });
-            };
+    //Form - Category elements
+        //label element
+        const labelCategory = document.createElement('label');
+        labelCategory.setAttribute('for', 'category');
+        labelCategory.textContent = 'What are you getting in touch about? *'
+        //dropbox element
+        const selectCategory = document.createElement('select');
+        selectCategory.id = 'category';
+        selectCategory.name = 'category';
         
-        //Form - Message elements
-            //label element
-            const labelMsg = document.createElement('label');
-            labelMsg.setAttribute('for', 'msg');
-            labelMsg.textContent = 'Your Message *';
-            //textarea element
-            const txtAreaMsg = document.createElement('textarea');
-            txtAreaMsg.cols = '30';
-            txtAreaMsg.rows = '10';
-            txtAreaMsg.id = 'msg';
-            txtAreaMsg.required = true;
-            txtAreaMsg.placeholder = 'Required';
-        
-        //Form - button
-        const submitBtn = document.createElement('button');
+        const createDropDown = () => {
+            const contactCategory = ['General Inquiry', 'Press Inquiry', 'Suggestions'];    
+            contactCategory.forEach(categoryText => {
+                const category = document.createElement('option');
+                category.value = categoryText.toLowerCase().replace(' ', '');
+                category.textContent = categoryText;
+                selectCategory.appendChild(category);
+            });
+        };
+    
+    //Form - Message elements
+        //label element
+        const labelMsg = document.createElement('label');
+        labelMsg.setAttribute('for', 'msg');
+        labelMsg.textContent = 'Your Message *';
+        //textarea element
+        const txtAreaMsg = document.createElement('textarea');
+        txtAreaMsg.cols = '30';
+        txtAreaMsg.rows = '10';
+        txtAreaMsg.id = 'msg';
+        txtAreaMsg.required = true;
+        txtAreaMsg.placeholder = 'Required';
+    
+    //Form - button
+    const submitBtn = document.createElement('button');
 
 
     //Add class/id
@@ -140,9 +141,6 @@ export const createContact = () => {
         formUl.style.margin = '20px 40px'
 
     
-        
-
-
     
     //Append Elements
         content.appendChild(contactMainCont);
@@ -192,13 +190,9 @@ export const createContact = () => {
     submitBtn.textContent = 'Submit';
 
     const submitBtnAction = () => {
-        if (getcontactForm().checkValidity()) {
-        getContactMainCont().textContent = 'Thank you for reaching out to us! We will get back to you within 2-3 business days.'
-        } else {
-
-        }
-        
-                                                                                
+        if (contactForm.checkValidity()) {
+        contactMainCont.textContent = 'Thank you for reaching out to us! We will get back to you within 2-3 business days.'
+        }                                                                       
     }
 
     //Submit button

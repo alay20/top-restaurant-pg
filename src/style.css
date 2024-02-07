@@ -20,7 +20,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 header {
@@ -31,6 +32,7 @@ header {
     background-color: rgb(236, 191, 133);
     color: rgb(2, 19, 33);
     min-width: 750px;
+    margin-top: 40px;
 }
 
 #restaurant-name {
@@ -88,9 +90,6 @@ header {
     visibility: hidden;
 }
 
-
-
-
 #content{
     margin-top: 50px;
 }
@@ -100,6 +99,7 @@ header {
 .main-img {
     width: 28%;
     height: auto;
+    margin: 0px;
 }
 
 .info-container {
